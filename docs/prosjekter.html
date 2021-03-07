@@ -105,8 +105,12 @@
 								jeg valgte den spesifikt fordi det hørtes spennende ut å lage ett prosjekt med en touch sensor. </p>
 								<p>Når jeg hadde kobla opp kretsen og fulgt koden som sto i boka så var det på tide og endre litt på den. Jeg tenkte da att jeg kunne på den til å lage lyd når jeg tok på sensoren, istedenfor å lyse. Da bytta jeg rett og slett ut lampa med høytaleren</p>
 								<p> <img src="images/Arduino.jpg"> </p>
-								<p> Etter jeg hadde designa koppen så skulle jeg lage ett klistremerke. Dette brukte jeg Adobe Illustrator til. Klistremerket kan brukes til flere ting, f.eks. koppen. Jeg laga rett og slett en logo ut av initialene mine "JW" <p>
-								<p> <img src="images/Klistremerke.png"><p>
+								<p> Etter at jeg hadde kobla om kretsen litt så måtte jeg endre på koden ifra og lyse til at den kunne spille av lyd. Det gjorde jeg ved å ta vekk "pinMode" integeren og legge til en som heter "notes" <p>
+								<p> etter det så fjerna jeg "pinMode(ledPin, OUTPUT)" ifra uinder setup delen fordi den ikke var nødvendig lengere.<p>
+								<p> Deretter gikk jeg videre til loop delen. her måtte jeg endre ett par ting. Under IF delen måtte jeg ta vekk "digitalWrite" siden det ikke var nødvendig lengere. Istedenfor så skrev jeg "tone(12, notes)" sånn at den skulle spille av den spesifiserte
+									tonen som jeg hadde satt under integeren "notes" helt i starten.<p>
+								<p> Under "Else" delen så endre jeg digitalWrite til "noTone" sånn at den ikke skulle spille av noe tone når jeg ikke tok på sensoren.<p>
+								<p> <img src="images/Boop Code image.png"><p>
 
 					</section>
 			</div>
