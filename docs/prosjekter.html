@@ -108,7 +108,7 @@
 								<p> Etter at jeg hadde kobla om kretsen litt så måtte jeg endre på koden ifra og lyse til at den kunne spille av lyd. Det gjorde jeg ved å ta vekk "pinMode" integeren og legge til en som heter "notes" <p>
 								<p> etter det så fjerna jeg "pinMode(ledPin, OUTPUT)" ifra uinder setup delen fordi den ikke var nødvendig lengere.<p>
 								<p> Deretter gikk jeg videre til loop delen. her måtte jeg endre ett par ting. Under IF delen måtte jeg ta vekk "digitalWrite" siden det ikke var nødvendig lengere. Istedenfor så skrev jeg "tone(12, notes)" sånn at den skulle spille av den spesifiserte
-									tonen som jeg hadde satt under integeren "notes" helt i starten. (150)<p>
+									tonen som jeg hadde satt under integeren "notes" helt i starten (150).<p>
 								<p> Under "Else" delen så endre jeg digitalWrite til "noTone" sånn at den ikke skulle spille av noe tone når jeg ikke tok på sensoren.<p>
 								<p> <img src="images/Boop Code image.png"><p>
 
